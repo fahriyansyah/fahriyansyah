@@ -1,0 +1,134 @@
+<html>
+<title>Reservation</title>
+<head>
+<style type="text/css">
+			body {
+				background-color: rgba(42, 38, 61, 0.82);
+				background-image: url('reserbg.png');
+				background-repeat: auto;
+				background-size: 1380px;
+				}
+			.container{
+				position: absolute;
+				width: 1550px;
+				height: 700px;
+				left: 0px;
+				top: 0px;
+				background: rgba(42, 38, 61, 0.82);}
+			.button {
+			display: flex;
+flex-direction: row;
+padding: 16px;
+
+position: absolute;
+width: 383px;
+height: 53px;
+left: calc(50% - 383px/2 + 0.5px);
+top: calc(50% - 53px/2 + 209.5px);
+
+background: #FCB371;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;}
+			.name {
+			display: flex;
+			flex-direction: row;
+			padding: 16px;
+			position: absolute;
+			width: 382px;
+			height: 46px;
+			left: calc(50% - 382px/2);
+			top: calc(50% - 46px/2 - 128px);
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;}
+			.email {
+			display: flex;
+			flex-direction: row;
+			padding: 16px;
+			position: absolute;
+			width: 382px;
+			height: 46px;
+			left: calc(50% - 382px/2 + 0.5px);
+			top: calc(50% - 46px/2 - 66px);
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;}
+			.telepon {
+			display: flex;
+			flex-direction: row;
+			padding: 16px;
+			position: absolute;
+			width: 177px;
+			height: 46px;
+			left: calc(50% - 177px/2 - 102px);
+			top: calc(50% - 46px/2 - 4px);
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px; }
+			.kota {
+			display: flex;
+			flex-direction: row;
+			padding: 16px;
+
+			position: absolute;
+			width: 189px;
+			height: 46px;
+			left: calc(50% - 189px/2 + 97px);
+			top: calc(50% - 46px/2 - 4px);
+			
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;}
+			.explain {
+			display: flex;
+			flex-direction: row;
+			padding: 16px;
+			
+			position: absolute;
+			width: 382px;
+			height: 116px;
+			left: calc(50% - 382px/2 + 0.5px);
+			top: calc(50% - 116px/2 + 93px);
+			
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;}
+			.submit {
+			display: flex;
+			flex-direction: row;
+			padding: 16px;
+			
+			position: absolute;
+			width: 383px;
+			height: 53px;
+			left: calc(50% - 383px/2 + 0.5px);
+			top: calc(50% - 53px/2 + 209.5px);
+			
+			background: #FCB371;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;}
+</style>
+
+<body>   
+<div class="container">
+<div align="left"><a href="home.html"> <img src="aboutback.png"></a></div>
+<div align="center"><img src="resertulis.png"></div> 
+<p>
+
+<form id="form1" name="form1" method="post" action="formsave.html">
+<div align="center">
+	<p>
+	<input type="text" name="nama" class="name" placeholder="Input Your Name">
+	<p>
+	<input type="text" name="email" class="email" placeholder="Input Your Email">
+	<p>
+	<input type="text" name="telepon" class="telepon" placeholder="Phone Number">
+	<input type="text" name="kota" class="kota" placeholder="Input Your Nationality">
+	<p>
+	<input type="text" name="penjelasan" class="explain" placeholder="Explain About Your Trip">
+	<p>
+	<input type="submit" name="Submit" value="Submit" class="submit">
+</form>
+</body>
+</head>
+</html>

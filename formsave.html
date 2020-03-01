@@ -1,0 +1,28 @@
+<h1> Thanks For Your Attention </h1>
+<table width="346" border="0">
+  <tr>
+    <td width="336"><form name="form1" method="post" action="home.html">
+      <label>
+      <input type="submit" name="Submit" value="Back To Home">
+      </label>
+        </form>
+    </td>
+  </tr>
+</table>
+<?php
+$server ="localhost";
+$username ="root";
+$password ="";
+$database ="bali";
+
+$db =mysqli_connect($server,$username,$password,$database) or die ("Gagal konek ke server MySQL".mysql_error());
+$nama=$_POST['nama'];
+$email=$_POST['email'];
+$telepon=$_POST['telepon'];
+$kota=$_POST['kota'];
+$penjelasan=$_POST['penjelasan'];
+
+$sql="INSERT INTO travel (nama,email,telepon,kota,penjelasan) values ('$nama','$email','$telepon','$kota','$penjelasan')";
+$query=mysqli_query($db,$sql);
+echo "Data berhasil Disimpan";
+?> 
